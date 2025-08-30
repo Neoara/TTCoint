@@ -1,0 +1,221 @@
+@media (max-width: 768px) {
+  .btn {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .site-header a img {
+    width: 113px;
+    height: 40;
+    cursor: pointer;
+    z-index: 1002;
+    position: relative;
+  }
+  .nav-list {
+    display: none;
+  }
+  .btn--outline-blue {
+    background: transparent;
+    border: 1px solid #24f0e9;
+    color: #fff;
+  }
+  .btn--outline-red {
+    z-index: 1002;
+    position: relative;
+  }
+  .hero-section {
+    display: grid;
+  }
+  .gradient-text {
+    font-weight: 500;
+    font-size: 48px;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .hero-text h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .tag {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .cta-buttons {
+    flex-wrap: wrap;
+  }
+  .cta-buttons button {
+    width: 100%;
+  }
+  .hero-media {
+    display: none;
+  }
+  #about {
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 116px;
+  }
+  .about-content {
+    padding: 0;
+  }
+  .about-title {
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .about-list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .about-promo {
+    order: 2;
+    min-width: auto;
+    width: 100%;
+    min-height: 276px;
+  }
+  .about-btn {
+    display: none;
+  }
+  .about-btn-mb {
+    order: 3;
+    display: block;
+    width: 100%;
+  }
+  .profit-content {
+    grid-template-columns: 1fr;
+  }
+  .profit-card:nth-child(3) {
+    order: 4;
+  }
+  .author-photo {
+    display: none;
+  }
+  .author-content {
+    width: 90%;
+  }
+  .author-photo-mb {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .author-photo-mb img {
+    width: 285px;
+    height: auto;
+  }
+  .author-heading {
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .author-name {
+    font-size: 32px;
+  }
+  .author-subtitle {
+    font-size: 20px;
+  }
+  .author-stat-value {
+    font-size: 28px;
+  }
+  .author-stat-text {
+    font-size: 16px;
+  }
+  .author-desc {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .author-quote {
+    font-size: 16px;
+  }
+  #faq {
+    width: 90%;
+  }
+  .faq-question {
+    font-size: 20px;
+  }
+  .faq-answer {
+    font-size: 16px;
+  }
+  .contact-section {
+    margin-top: -100px;
+  }
+  .contact-section__title h2 {
+    text-align: center;
+    font-size: 36px;
+  }
+  .contact-section__subtitle {
+    text-align: center;
+    font-size: 16px;
+  }
+  .contact-button {
+    font-size: 16px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 113px;
+    height: 40;
+  }
+  .burger {
+    cursor: pointer;
+    z-index: 1002;
+    display: block;
+  }
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .overlay.active {
+    display: flex;
+  }
+  .burger-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* в колонку */
+    gap: 24px; /* расстояние между пунктами */
+    text-align: center;
+  }
+  .burger-nav-list li a {
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .burger-nav-list li a:hover {
+    color: #24f0e9; /* подсветка при наведении */
+  }
+  .modal__content {
+    border-radius: 12px;
+    padding: 15px;
+    width: 70%;
+  }
+  .modal__title {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .modal__subtitle {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .pricing-button {
+    font-size: 16px;
+  }
+}

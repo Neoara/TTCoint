@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main-style.css" />
+    <link rel="stylesheet" href="./styles/modals.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon" />
+    <!-- <link rel="icon" href="" type="image/png" /> -->
+    <title>TT Монета</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Подключение иконок -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div class="layout-wrapper">
+        <header class="site-header">
+          <a href="http://127.0.0.1:8080/" class="footer-logo-link">
+            <img src="./imgs/logo.png" alt="логотип" class="footer-logo" />
+          </a>
+
+          <ul class="nav-list">
+            <li><a href="#about">О курсе</a></li>
+            <li><a href="#benefits">Что даст курс</a></li>
+            <li><a href="#author">Автор курса</a></li>
+            <li><a href="#pricing">Тарифы</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+          <button class="burger btn btn--outline-blue" id="burger">Меню</button>
+          <div class="overlay" id="overlay">
+            <ul class="burger-nav-list">
+              <li><a href="#about">О курсе</a></li>
+              <li><a href="#benefits">Что даст курс</a></li>
+              <li><a href="#author">Автор курса</a></li>
+              <li><a href="#pricing">Тарифы</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <button class="btn btn--outline-red btn-q" data-open="modal-question">
+            Задать вопрос
+          </button>
+        </header>
+
+        <section class="hero-section">
+          <div class="hero-text">
+            <h1 class="gradient-text">
+              Монетизируй <br />
+              TikTok
+            </h1>
+            <h4>
+              Научись зарабатывать от $2000/мес на -проектах, уделяя ~2 часа в
+              день. Без «магии» — только рабочая система.
+            </h4>
+
+            <div class="feature-tags">
+              <div class="tag tag--blue">Подходит с нуля</div>
+              <div class="tag tag--blue">Формат: видео + практика</div>
+              <div class="tag tag--blue">Поддержка кураторов</div>
+              <div class="tag tag--red">Рассрочка (Kaspi / карта)</div>
+            </div>
+
+            <div class="cta-buttons">
+              <button class="btn btn--red" data-open="modal-application">
+                Записаться сейчас
+              </button>
+              <button class="btn btn--dark">
+                <a href="#benefits" style="text-decoration: none; color: #fff"
+                  >Программа курса</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <img src="./imgs/hero-phone.png" alt="Телефон" />
+            <img src="./imgs/hero-tt-logo.png" alt="TikTok логотип" />
+          </div>
+        </section>
+      </div>
+
+      <section id="about">
+        <div class="about-promo"></div>
+        <div class="about-content">
+          <h2 class="about-title">Чему научишься</h2>
+          <ul class="about-list">
+            <li>Выбирать прибыльные ниши и форматы без «потолка».</li>
+            <li>
+              Делать контент-систему: сценарии, монтаж (CapCut), упаковка.
+            </li>
+            <li>
+              Понимать алгоритмы TikTok и разгонять рост без теневого банa.
+            </li>
+            <li>
+              5 моделей монетизации: услуги, арбитраж/аффилиат, интеграции,
+              продажи своих продуктов, лайв-шоппинг.
+            </li>
+            <li>Строить воронку: контент → лид → деньги.</li>
+            <li>
+              Управлять потоками: контент-план, дедлайны, аналитика,
+              масштабирование.
+            </li>
+          </ul>
+          <button class="btn btn--red about-btn" data-open="modal-application">
+            Записаться сейчас
+          </button>
+        </div>
+        <button class="btn btn--red about-btn-mb" data-open="modal-application">
+          Записаться сейчас
+        </button>
+      </section>
+      <section id="benefits">
+        <div class="section-title">
+          <h2>Программа</h2>
+        </div>
+        <div class="swiper benefits-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="benefits-card benefits-card--blue">
+                <div class="card_label">Модуль 1</div>
+                <h4>Ниши & Стратегия</h4>
+                <h5>Что:</h5>
+                <p>Выбор ниши, бенчмарки, цели, KPI</p>
+                <h5>Итог:</h5>
+                <p>Утверждённая стратегия и контент-матрица</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="benefits-card benefits-card--pink">
+                <div class="card_label">Модуль 2</div>
+                <h4>Контент-машина</h4>
+                <h5>Что:</h5>
+                <p>Сценарии, «крючки», сторителлинг, план на 30 дней</p>
+                <h5>Итог:</h5>
+                <p>15 сценариев + шаблон контент-плана</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="benefits-card benefits-card--blue">
+                <div class="card_label">Модуль 1</div>
+                <h4>Съёмка & Монтаж</h4>
+                <h5>Что:</h5>
+                <p>Кадры, свет/звук, быстрый монтаж, субтитры</p>
+                <h5>Итог:</h5>
+                <p>10 роликов в продакшене</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="benefits-card benefits-card--pink">
+                <div class="card_label">Модуль 1</div>
+                <h4>Алгоритмы & Разгон</h4>
+                <h5>Что:</h5>
+                <p>Что любит TikTok, ошибки, хэштеги/описания, обложки</p>
+                <h5>Итог:</h5>
+                <p>Чек-лист оптимизации + план тестов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="profit">
+        <div class="section-title"><h2>Что даст курс</h2></div>
+        <div class="profit-content">
+          <div class="profit-card profit-card--red">
+            <div class="profit-logo">
+              <img src="./imgs/prf-logo-1.png" alt="" />
+            </div>
+            <p>Система, а не «угадал-не угадал» — пошаговые чек-листы</p>
+          </div>
+          <div class="profit-card profit-card--blue">
+            <div class="profit-logo profit-logo--blue">
+              <img src="./imgs/prf-logo-2.png" alt="" />
+            </div>
+            <p>Экономия времени — 2 часа в день → понятный план</p>
+          </div>
+          <div class="profit-card profit-card--blue">
+            <div class="profit-logo profit-logo--blue">
+              <img src="./imgs/prf-logo-3.png" alt="" />
+            </div>
+            <p>Быстрые тесты — запускаешь гипотезы за 48 часов</p>
+          </div>
+          <div class="profit-card profit-card--red">
+            <div class="profit-logo">
+              <img src="./imgs/prf-logo-4.png" alt="" />
+            </div>
+            <p>Деньги ≠ только просмотры — фокус на воронку и конверсию</p>
+          </div>
+        </div>
+      </section>
+      <div class="two-sides-block" style="margin-top: 116px">
+        <section id="author">
+          <div class="author-photo">
+            <img src="./imgs/author.png" alt="" />
+          </div>
+          <div class="author-content">
+            <div class="author-content-header">
+              <h2 class="author-heading">Автор курса</h2>
+              <h2 class="author-name">Имя Фамилия</h2>
+              <h3 class="author-subtitle">практик TikTok-монетизации</h3>
+            </div>
+            <div class="author-photo-mb">
+              <img src="./imgs/author.png" alt="" />
+            </div>
+            <div class="author-stats">
+              <div class="author-stat">
+                <h3 class="author-stat-value">980 млн</h3>
+                <p class="author-stat-text">
+                  просмотров суммарно по кейсам клиентов/проектов
+                </p>
+              </div>
+              <div class="author-stat">
+                <h3 class="author-stat-value">980 млн</h3>
+                <p class="author-stat-text">
+                  просмотров суммарно по кейсам клиентов/проектов
+                </p>
+              </div>
+            </div>
+            <p class="author-desc">
+              Рабочие связки: <br />контент → лид → продажа, без «серых» схем
+            </p>
+            <p class="author-quote">«Учимся делать, а не смотреть».</p>
+          </div>
+        </section>
+      </div>
+      <section id="pricing">
+        <div class="section-title"><h2>Тарифы</h2></div>
+        <div class="swiper pricing-cards">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="pricing-card">
+                <h2 class="pricing-title">Lite</h2>
+                <h3 class="pricing-subtitle">для самостоятельных</h3>
+                <p class="pricing-text">
+                  Записи уроков (6 нед.) Шаблоны, чек-листы Доступ 6 мес.
+                  Поддержка: нет
+                </p>
+                <p class="pricing-price">50 000 ₸</p>
+                <button class="pricing-button">Купить Lite</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pricing-card pricing-card-blue">
+                <h2 class="pricing-title">Lite</h2>
+                <h3 class="pricing-subtitle">для самостоятельных</h3>
+                <p class="pricing-text">
+                  Записи уроков (6 нед.) Шаблоны, чек-листы Доступ 6 мес.
+                  Поддержка: нет
+                </p>
+                <p class="pricing-price">50 000 ₸</p>
+                <button class="pricing-button pricing-button-blue">
+                  Купить Lite
+                </button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pricing-card">
+                <h2 class="pricing-title">Lite</h2>
+                <h3 class="pricing-subtitle">для самостоятельных</h3>
+                <p class="pricing-text">
+                  Записи уроков (6 нед.) Шаблоны, чек-листы Доступ 6 мес.
+                  Поддержка: нет
+                </p>
+                <p class="pricing-price">50 000 ₸</p>
+                <button class="pricing-button">Купить Lite</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <div class="section-title"><h2>FAQ</h2></div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-header">
+              <p class="faq-question">Нужен мощный телефон/камера?</p>
+              <button class="faq-toggle">▲</button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Нет. Достаточно современного смартфона и CapCut. Дам пресеты.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item faq-item-red">
+            <div class="faq-header">
+              <p class="faq-question">Нужен мощный телефон/камера?</p>
+              <button class="faq-toggle">▲</button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Нет. Достаточно современного смартфона и CapCut. Дам пресеты.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <p class="faq-question">Нужен мощный телефон/камера?</p>
+              <button class="faq-toggle">▲</button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Нет. Достаточно современного смартфона и CapCut. Дам пресеты.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item faq-item-red">
+            <div class="faq-header">
+              <p class="faq-question">Нужен мощный телефон/камера?</p>
+              <button class="faq-toggle">▲</button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Нет. Достаточно современного смартфона и CapCut. Дам пресеты.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-header">
+              <p class="faq-question">Нужен мощный телефон/камера?</p>
+              <button class="faq-toggle">▲</button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Нет. Достаточно современного смартфона и CapCut. Дам пресеты.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item faq-item-red">
+            <div class="faq-header">
+              <p class="faq-question">Нужен мощный телефон/камера?</p>
+              <button class="faq-toggle">▲</button>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Нет. Достаточно современного смартфона и CapCut. Дам пресеты.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="two-sides-block" style="margin-top: 116px">
+        <section class="contact-section">
+          <div class="contact-section__title">
+            <h2>Остались вопросы?</h2>
+          </div>
+          <h3 class="contact-section__subtitle">
+            Напишите нам — поможем выбрать тариф и стартовать без стресса.
+          </h3>
+          <div class="contact-section__buttons">
+            <button class="contact-button contact-button--whatsapp">
+              <a
+                href="https://wa.me/7470339447"
+                class="contact-button contact-button--whatsapp"
+              >
+                Написать в WhatsApp
+              </a>
+            </button>
+            <button class="contact-button contact-button--telegram">
+              <a
+                href="https://t.me/+7470339447"
+                class="contact-button contact-button--telegram"
+              >
+                Написать в Telegram
+              </a>
+            </button>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-content">
+          <a href="http://127.0.0.1:8080/" class="footer-logo-link">
+            <img src="./imgs/logo.png" alt="логотип" class="footer-logo" />
+          </a>
+
+          <ul class="footer-nav">
+            <li><a href="#about">О курсе</a></li>
+            <li><a href="#benefits">Что даст курс</a></li>
+            <li><a href="#author">Автор курса</a></li>
+            <li><a href="#pricing">Тарифы</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Модалка заявки -->
+    <div id="modal-application" class="modal modal--hidden">
+      <div class="modal__content">
+        <button class="modal__close" data-close>&times;</button>
+        <h2 class="modal__title">Хочу зарабатывать на TikTok</h2>
+        <p class="modal__subtitle">
+          Оставьте заявку, наш менеджер свяжется с вами в ближайшее время
+        </p>
+        <form class="modal__form">
+          <input type="text" placeholder="Имя" required />
+          <input type="tel" placeholder="Номер телефона" required />
+          <input type="email" placeholder="E-mail" required />
+          <button type="submit" class="pricing-button" style="margin-top: 20px">
+            Записаться сейчас
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Модалка вопроса -->
+    <div id="modal-question" class="modal modal--hidden">
+      <div class="modal__content">
+        <button class="modal__close" data-close>&times;</button>
+        <h2 class="modal__title">Что-то непонятно? Спросите — разберёмся</h2>
+        <textarea
+          class="modal__textarea"
+          placeholder="Ваш вопрос..."
+        ></textarea>
+        <button type="submit" class="pricing-button" style="margin-top: 20px">
+          Отправить
+        </button>
+      </div>
+    </div>
+
+    <!-- SWIPER INIT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-init.js"></script>
+    <!-- FAQ INIT -->
+    <script src="./js/faq.js"></script>
+    <!-- MODAL INIT -->
+    <script src="./js/modals.js"></script>
+    <!-- BURGER INIT -->
+    <script src="./js/burger.js"></script>
+  </body>
+</html>
