@@ -401,6 +401,10 @@ body {
 }
 .author-photo {
   padding: 0 100px;
+  max-height: 560px;
+}
+.author-photo img {
+  max-height: 460px;
 }
 .author-photo-mb {
   display: none;
@@ -480,6 +484,7 @@ body {
   align-items: start;
   background: linear-gradient(var(--c1), #000000, var(--c1));
   border: 1px solid var(--c2);
+  margin-right: 1px;
 }
 .pricing-card-blue {
   --c1: #24f0e938;

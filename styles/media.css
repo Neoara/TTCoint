@@ -218,4 +218,12 @@
   .pricing-button {
     font-size: 16px;
   }
+  .benefits-titles {
+    font-size: 20px;
+  }
+  .benefits-answers,
+  .benefits-card ul,
+  .benefits-subtitles {
+    font-size: 16px;
+  }
 }
