@@ -110,6 +110,10 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.pricing-button a {
+  text-decoration: none;
+  color: inherit;
+}
 .btn:hover {
   transform: scale(1.03);
 }
