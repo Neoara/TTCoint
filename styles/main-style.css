@@ -106,6 +106,10 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
 .btn:hover {
   transform: scale(1.03);
 }
