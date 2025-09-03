@@ -1,11 +1,11 @@
 const swiperBenefits = new Swiper('.benefits-swiper', {
-  loop: false,
+  loop: true,
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 16,
   breakpoints: {
     769: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 16,
       slidesPerGroup: 1,
     },
